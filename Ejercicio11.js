@@ -28,9 +28,8 @@ class GeoLocalizacion{
             center: [this.longitud, this.latitud],
             zoom: 13
             }); 
-        //var marker = new mapboxgl.Marker().setLngLat([this.longitud, this.latitud]).addTo(map);
-        //var mapaa=$("section");
-       //$("h1").after(mapaa);
+        var marker = new mapboxgl.Marker().setLngLat([this.longitud, this.latitud]).addTo(map);
+
     }
 
     mostrarErrores(error){
