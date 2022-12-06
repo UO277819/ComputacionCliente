@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <title>SEW</title>
-    <script src="Ejercicio11.js"></script>
     <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
 	<meta name ="author" content ="Aaron" >
     <meta name ="description" content ="Ejercicio 11" >
     <meta name ="keywords" content ="Ejercicio 11" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0"> 
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Geolocalizacion</h1>
-    <form>
-        <input type="button" value="Oviedo" onclick="localizacion.mostrar()"/>
-    </form>
-    <section>
-        <h2>Datos</h2>
+    <h1>Mapa Dinámico</h1>
+    <section id="map">
+        <h2>Mapa</h2>
     </section>
+    <script src="Ejercicio11.js"> 
+        </script>
 </body>
 </html>
