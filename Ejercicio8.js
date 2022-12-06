@@ -1,11 +1,11 @@
 class Tiempo{
     constructor(){
         this.apikey="47b790fd0fc41878c80c57c9846132cb";
-        this.url="http://api.openweathermap.org/data/2.5/weather?q=";
+        this.url="https://api.openweathermap.org/data/2.5/weather?q=";
         this.idioma="&lang=es";
         this.unidades="&units=metric";
         this.error="<h2>¡problemas! No puedo obtener información de"
-         +"<a href='http://openweathermap.org'>OpenWeatherMap</a></h2>";
+         +"<a href='https://openweathermap.org'>OpenWeatherMap</a></h2>";
         this.ciudad="";
     }
     mostrarDatos(){
@@ -49,19 +49,20 @@ class Tiempo{
     }
 
     cargarDatos(ciudad){
+        
         this.reiniciarUrl();
         $("section").remove();
         $("h2").remove();
         this.ciudad=""+ciudad;
         this.url+=this.ciudad+this.unidades+this.idioma
             + "&APPID=" +this.apikey
-        $("form").before("<h2>Datos en JSON desde <a href='http://openweathermap.org'>OpenWeatherMap</a></h2>");
+        $("form").before("<h2>Datos en JSON desde <a href='https://openweathermap.org'>OpenWeatherMap</a></h2>");
         $("form").after("<section></section>");
         this.mostrarDatos();
     }
 
     reiniciarUrl(){
-        this.url="http://api.openweathermap.org/data/2.5/weather?q=";
+        this.url="https://api.openweathermap.org/data/2.5/weather?q=";
     }
 }
 
