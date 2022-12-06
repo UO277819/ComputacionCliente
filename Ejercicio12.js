@@ -6,7 +6,7 @@ class Analizador {
         $('h3').remove();
         $('p').remove();
         $('textarea').remove();
-        $('label').remove();
+        $('label[for=area]').remove();
         var listaArchivos = $('input[type=file]');
         for (var i = 0; i < listaArchivos.length; i++) {
             var nBytes = 0,
