@@ -11,12 +11,24 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  
 </head>
 <body>
     <h1>Mapa Dinámico</h1>
     <section id="map">
         <h2>Mapa</h2>
     </section>
+    <label for="ciudad">Texto</label>
+    <form >
+
+        <input id="ciudad" type="text">
+        <input type="button" value="Añadir" onclick="localizacion.calcularRuta()"/>
+    </form>
     <script src="Ejercicio11.js"> 
         </script>
 </body>
