@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEW</title>
+    <script src="Ejercicio7.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+	<meta name ="author" content ="Aaron" >
+    <meta name ="description" content ="Ejercicio 7" >
+    <meta name ="keywords" content ="Ejercicio 7" >
+    <meta name ="viewport" content="width=device-width,initial scale=1.0"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+      
+        <section>
+           <h1>¿Qué es React?</h1>
+            <p>React (también llamada React.js o ReactJS) es una biblioteca Javascript de código abierto diseñada para
+                 crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.
+                  Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores
+                   libres.
+            </p>
+
+            <p>React intenta ayudar a los desarrolladores a construir aplicaciones que usan datos que cambian todo el tiempo.
+                 Su objetivo es ser sencillo, declarativo y fácil de combinar. React sólo maneja la interfaz de usuario en una
+                  aplicación; React es la Vista en un contexto en el que se use el patrón MVC (Modelo-Vista-Controlador) o MVVM
+                   (Modelo-vista-modelo de vista). También puede ser utilizado con las extensiones de React-based que se encargan
+                    de las partes no-UI (que no forman parte de la interfaz de usuario) de una aplicación web.
+            </p>
+
+            <p> Según el servicio de análisis JavaScript (en inglés "JavaScript analytics service"), Libscore, React actualmente está 
+                siendo utilizado en las páginas principales de Imgur, Bleacher Informe, Feedly, Airbnb, SeatGeek, HelloSign, entre otras.
+            </p> 
+            <p>
+                Para mas informacion visite la pagina oficial de<a href="https://es.reactjs.org/">React</a>
+            </p>
+                 
+        </section>   
+    </main>
+    <section>
+        <h2>Comparación con Framework Angular</h2>
+        <p>
+            A continuación hay una tabla en la que comparamos brevemente
+            angular contra su mayor adversario, que es react 
+        </p>
+        <table><caption>Angular vs React</caption>
+            <tr>
+                <th scope="col" id="parametros">Parametros para Comparar</th>
+                <th scope="col" id="angular">Angular </th>
+                <th scope="col" id="react">React </th>
+                <th scope="col" id="ganador">Ganador </th>
+            
+            </tr>
+            <tr>
+                <th scope="row" id="framework-libreria">Framework o libreria</th>
+                <td headers="framework-libreria">Es un front-end framework  </td>
+                <td headers="framework-libreria">Es una libreria  </td>
+                <td headers="framework-libreria">Tu decides  </td>
+            </tr>
+            <tr>
+                <th scope="row" id="rendimiento">Rendimiento</th>
+                <td headers="rendimiento">Utiliza DOM regular, lo que afecta negativamente al rendimiento
+                    de las aplicaciones web </td>
+                <td headers="rendimiento">Utiliza DOM virtual, lo que afecta positivamente al rendimiento
+                    de las aplicaciones web</td>
+                <td headers="rendimiento">React </td>
+            </tr>
+            <tr>
+                <th scope="row" id="escalabilidad">Escalabilidad</th>
+                <td headers="escalabilidad">Tiene arquitectura modular, lo que ofrece una Escalabilidad
+                    sustancial </td>
+                <td headers="escalabilidad">Tiene componentes basados en arquitecturas que ofrecen una buena
+                    Escalabilidad.
+                </td>
+                <td headers="escalabilidad">Angular </td>
+            </tr>
+            <tr>
+                <th scope="row" id="aprendizaje">Curva de aprendizaje</th>
+                <td headers="aprendizaje">Empinada curva de aprendizaje </td>
+                <td headers="aprendizaje">Simple curva de aprendizaje
+                </td>
+                <td headers="aprendizaje">Depende de los conocimientos</td>
+            </tr>
+        </table>
+    </section> 
+    <form>
+        <input type="button" value="ocultar p" onclick="comando.ocultar()"/>
+        <input type="button" value="mostrar p" onclick="comando.mostrar()"/>
+
+        <input type="text">
+        <input type="button" value="modificar" onclick="comando.modificar()"/>
+        <input type="button" value="Añadir" onclick="comando.añadir()"/>
+
+        <input type="button" value="eliminar h2" onclick="comando.eliminar()"/>
+
+        <input type="button" value="recorrer" onclick="comando.recorrer()"/>
+
+        <input type="button" value="Sumar F+C" onclick="comando.sumarFC()"/>
+
+
+    </form>
+    <footer>  
+                    <section >
+                        <h4>Uniovi</h4>
+                        <ul >
+                            <li>SEW</li>
+                        </ul>
+                    </section>
+                   
+                    <section >
+                        <h4>Contáctanos</h4>
+                        <ul >
+                            <li>UOXXXXXX@gmail.com</li>
+                            <li>98553XXXX</li>
+                        </ul>
+                    </section>
+                   
+                    <section >
+                        <h4>Ubicación</h4>
+                        <ul >
+                            <li>Calle Valdés Salas,</li>
+                            <li>11, 33007 Oviedo,</li>
+                            <li>Asturias</li>
+                        </ul>
+                    </section>
+                
+                <section >
+                    <h5 >
+                        &copy;SEW | All right reserved | Terms of Service | Privacy
+                    </h5>
+                </section>
+    </footer>
+
+
+</body>
+</html>
