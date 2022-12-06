@@ -6,6 +6,7 @@ class Analizador {
         $('h3').remove();
         $('p').remove();
         $('textarea').remove();
+        $('label').remove();
         var listaArchivos = $('input[type=file]');
         for (var i = 0; i < listaArchivos.length; i++) {
             var nBytes = 0,
@@ -19,7 +20,8 @@ class Analizador {
                     console.log(archivos[j].type);
                     if (archivos[j].type == 'application/json' || archivos[j].type == 'text/xml' || archivos[j].type == 'text/plain') {
                         reader.onload = function (progressEvent) {
-                        $("footer").before("<textarea name = 'texto' cols = '120' rows = '50' disabled>" + this.result + "</textarea>");
+                        $("footer").before(" <label for='area'>Contenido</label>"
+                           + "<textarea id='area' name = 'texto' cols = '120' rows = '50' disabled>" + this.result + "</textarea>");
                         };
                     }
                     reader.readAsText(archivos[j]);
