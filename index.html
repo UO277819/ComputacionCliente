@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <title>SEW</title>
-    <script src="Ejercicio9.js"></script>
-    <link rel="stylesheet" type="text/css" href="Ejercicio9.css" />
+    <script src="Ejercicio12.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
 	<meta name ="author" content ="Aaron" >
-    <meta name ="description" content ="Ejercicio 9" >
-    <meta name ="keywords" content ="Ejercicio 9" >
+    <meta name ="description" content ="Ejercicio 12" >
+    <meta name ="keywords" content ="Ejercicio 12" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>API Tiempo XML</h1>
+    <h1>Analizar Archivos</h1>
+    <h2>Escoge Archivos</h2>
     <form>
-        <input type="button" value="Oviedo" onclick="tiempo.verXML('Oviedo')"/>
-        <input type="button" value="Piloña" onclick="tiempo.verXML('Piloña')"/>
-        <input type="button" value="Barcelona" onclick="tiempo.verXML('Barcelona')"/>
-        <input type="button" value="Pulpi" onclick="tiempo.verXML('Pulpi')"/>
-        <input type="button" value="Madrid" onclick="tiempo.verXML('Madrid')"/>
+        <label for="archivo">Click aqui para subir sus archivos</label>
+        <input id="archivo" type="file" name="Escoger Archivo" onchange="archivo.obtenerDatos()" multiple/>
     </form>
-
+    <footer>
+        <p>UO277819, SEW</p>
+    </footer>
 </body>
 </html>
