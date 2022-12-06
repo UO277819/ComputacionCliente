@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8" />
     <title>SEW</title>
-    <script src="Ejercicio12.js"></script>
-    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
 	<meta name ="author" content ="Aaron" >
-    <meta name ="description" content ="Ejercicio 12" >
-    <meta name ="keywords" content ="Ejercicio 12" >
+    <meta name ="description" content ="Ejercicio 14" >
+    <meta name ="keywords" content ="Ejercicio 14" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0"> 
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="Ejercicio14.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  
 </head>
 <body>
-    <h1>Analizar Archivos</h1>
-    <h2>Escoge Archivos</h2>
-    <label for="subirArchivos">Clicke para subir sus archivos</label>
-    <form>
-    <input id="subirArchivos" type="file" name="Escoger Archivo" onchange="archivo.obtenerDatos()" multiple/>
-   </form>
-    <footer>
-        <p>UO277819, SEW</p>
-    </footer>
+    <h1>Recorrido</h1>
+    
+    <section id="drop_zone" ondrop="recorrido.dropHandler(event);" ondragover="recorrido.dragOverHandler(event);">
+		<h2>Modo de empleo</h2>
+		<p>Arrastra y suelta AQUÍ el archivo del recorrido con el formato: "Ciudad 1,Ciudad 2,..."</p>
+	</section>
+    <section id="map">
+        <h2>Mapa</h2>
+    </section>
 </body>
 </html>
