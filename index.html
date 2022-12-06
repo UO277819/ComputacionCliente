@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <title>SEW</title>
-    <script src="MapaGeoJSON.js"></script>
-    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <script src="Ejercicio11.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
 	<meta name ="author" content ="Aaron" >
-    <meta name ="description" content ="MapaGeoJSON" >
-    <meta name ="keywords" content ="MapaGeoJSON" >
+    <meta name ="description" content ="Ejercicio 11" >
+    <meta name ="keywords" content ="Ejercicio 11" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
-    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet" />
-   
 </head>
 <body>
-    <h1>Analizar Archivos</h1>
-    
-    <section id="map">
-        <h2>Mapa</h2>
-    </section>
-    <label for="subirArchivos">Clicke para subir sus archivos</label>
+    <h1>Geolocalizacion</h1>
     <form>
-    <input id="subirArchivos" type="file" name="Escoger Archivo" onchange="archivo.obtenerDatos()" multiple/>
-   </form>
-    <footer>
-        <p>UO277819, SEW</p>
-    </footer>
+        <input type="button" value="Oviedo" onclick="localizacion.mostrar()"/>
+    </form>
+    <section>
+        <h2>Datos</h2>
+    </section>
 </body>
 </html>
